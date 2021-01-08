@@ -3,7 +3,7 @@ import { calculateCost } from "../libs/billing-lib";
 test("Lowest tier", () => {
   const storage = 10;
 
-  const cost = 4000;
+  const cost = 10000;
   const expectedCost = calculateCost(storage);
 
   expect(cost).toEqual(expectedCost);
@@ -12,7 +12,7 @@ test("Lowest tier", () => {
 test("Middle tier", () => {
   const storage = 100;
 
-  const cost = 20000;
+  const cost = 100000;
   const expectedCost = calculateCost(storage);
 
   expect(cost).toEqual(expectedCost);
@@ -21,7 +21,7 @@ test("Middle tier", () => {
 test("Highest tier", () => {
   const storage = 101;
 
-  const cost = 10100;
+  const cost = 101000;
   const expectedCost = calculateCost(storage);
 
   expect(cost).toEqual(expectedCost);
