@@ -14,8 +14,8 @@ export const main = handler(async (event, context) => {
     source,
     amount,
     description,
-    currency: "BRL",
-    receipt_email: "ariel@wiselymed.com",
+    currency: "brl",
+    receipt_email: "ariel@wiselymed.com"
   });
 
   return { status: true };
